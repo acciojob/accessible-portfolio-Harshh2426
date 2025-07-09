@@ -1,16 +1,53 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>My Favorite Movie</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <!-- the entire body must be written by student -->
+
+  <!-- Image with accessible label -->
+  <img src="poster.jpg" alt="Movie poster of The Matrix" aria-label="Movie Poster: The Matrix">
+
+  <!-- Heading with aria-label -->
+  <h1 aria-label="Movie Title">The Matrix</h1>
+
+  <!-- Unordered list with ARIA tags -->
+  <ul aria-labelledby="list-heading">
+    <h2 id="list-heading">Main Characters</h2>
+    <li id="listitem1" aria-labelledby="listitem1">Neo (Keanu Reeves)</li>
+    <li id="listitem2" aria-labelledby="listitem2">Trinity (Carrie-Anne Moss)</li>
+    <li id="listitem3" aria-labelledby="listitem3">Morpheus (Laurence Fishburne)</li>
+  </ul>
+
+  <!-- Navigation with links -->
+  <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="#about" aria-label="About Section Link">About</a></li>
+      <li><a href="#cast" aria-label="Cast Section Link">Cast</a></li>
+      <li><a href="#trailer" aria-label="Trailer Section Link">Watch Trailer</a></li>
+    </ul>
+  </nav>
+
+  <!-- Dummy sections for nav -->
+  <section id="about" aria-label="About the Movie">
+    <p>The Matrix is a 1999 science fiction film that explores the nature of reality in a simulated world.</p>
+  </section>
+
+  <section id="cast" aria-label="Cast Information">
+    <p>The cast includes Keanu Reeves, Laurence Fishburne, and Carrie-Anne Moss.</p>
+  </section>
+
+  <section id="trailer" aria-label="Trailer Video">
+    <p>Watch the official trailer on YouTube.</p>
+  </section>
+
+  <!-- Script -->
+  <script type="text/javascript" src="./script.js"></script>
 
 </body>
-
 </html>
